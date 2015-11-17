@@ -105,6 +105,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Controller.cs" />
+    <Compile Include="DatabaseConnection.cs" />
     <Compile Include="IPatientData.cs" />
     <Compile Include="IPatientFactory.cs" />
     <Compile Include="PatientClassesEnumeration.cs" />
@@ -115,6 +116,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PMSDatabaseDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SessionRecord.cs" />
     <Compile Include="UpDown.xaml.cs">
       <DependentUpon>UpDown.xaml</DependentUpon>
     </Compile>

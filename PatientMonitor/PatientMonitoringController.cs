@@ -9,7 +9,7 @@ namespace PatientMonitor
 {
     class PatientMonitoringController
     {
-        readonly Window1 _mainWindow = null;
+        readonly MainWindow _mainWindow = null;
         readonly IPatientFactory _patientFactory = null;
         DispatcherTimer _tickTimer = new DispatcherTimer();
         PatientDataReader _dataReader;
@@ -35,84 +35,17 @@ namespace PatientMonitor
         Label _diastolicPressure;
         Label _temperature;
 
-        public PatientMonitoringController(Window1 window, IPatientFactory patientFactory)
+        public PatientMonitoringController(MainWindow window, IPatientFactory patientFactory)
         {
             _patientFactory = patientFactory;
             _mainWindow = window;
-            _pulseRate = _mainWindow.bed_1_heart_rate;
-            _pulseRate1 = _mainWindow.bed_2_heart_rate;
-            _breathingRate = _mainWindow.bed_1_breathing_rate;
-            _systolicPressure = _mainWindow.bed_1_blood_pressure;
-            _temperature = _mainWindow.bed_1_temparature;
-             DataInit();
-             GrabUiControlReferences();
-          /*_pulseRate = _mainWindow.pulseRate;
+            _pulseRate = _mainWindow.pulseRate;
             _breathingRate = _mainWindow.breathingRate;
             _systolicPressure = _mainWindow.systolic;
             _diastolicPressure = _mainWindow.diastolic;
             _temperature = _mainWindow.temperature;
-            _alarmMuter = _mainWindow.AlarmMute;    */
+            _alarmMuter = _mainWindow.AlarmMute;    
         }
-
-        public void DataInit()
-        {
-            string fileName;
-            _listPatientDataReader = new List<PatientDataReader>();
-            _ListPulseRates = new List<Label>();
-            _ListBloodPressure = new List<Label>();
-            _ListTemperatures = new List<Label>();
-            _ListBreathingRates = new List<Label>();
-            for (int i = 0; i < 8; i++)
-            {
-                fileName = @"..\..\..\" + "Bed "+(i+1) + ".csv";
-                PatientDataReader _dataReader = (PatientDataReader)_patientFactory.CreateandReturnObj(PatientClassesEnumeration.PatientDataReader);
-                _dataReader.Connect(fileName);
-                _listPatientDataReader.Add(_dataReader);
-            }
-
-
-        }
-
-        public void GrabUiControlReferences()
-        {
-            _ListPulseRates.Add(_mainWindow.bed_1_heart_rate);
-            _ListPulseRates.Add(_mainWindow.bed_2_heart_rate);
-            _ListPulseRates.Add(_mainWindow.bed_3_heart_rate);
-            _ListPulseRates.Add(_mainWindow.bed_4_heart_rate);
-            _ListPulseRates.Add(_mainWindow.bed_5_heart_rate);
-            _ListPulseRates.Add(_mainWindow.bed_6_heart_rate);
-            _ListPulseRates.Add(_mainWindow.bed_7_heart_rate);
-            _ListPulseRates.Add(_mainWindow.bed_8_heart_rate);
-
-            _ListTemperatures.Add(_mainWindow.bed_1_temparature);
-            _ListTemperatures.Add(_mainWindow.bed_2_temparature);
-            _ListTemperatures.Add(_mainWindow.bed_3_temparature);
-            _ListTemperatures.Add(_mainWindow.bed_4_temparature);
-            _ListTemperatures.Add(_mainWindow.bed_5_temparature);
-            _ListTemperatures.Add(_mainWindow.bed_6_temparature);
-            _ListTemperatures.Add(_mainWindow.bed_7_temparature);
-            _ListTemperatures.Add(_mainWindow.bed_8_temparature);
-
-            _ListBreathingRates.Add(_mainWindow.bed_1_breathing_rate);
-            _ListBreathingRates.Add(_mainWindow.bed_2_breathing_rate);
-            _ListBreathingRates.Add(_mainWindow.bed_3_breathing_rate);
-            _ListBreathingRates.Add(_mainWindow.bed_4_breathing_rate);
-            _ListBreathingRates.Add(_mainWindow.bed_5_breathing_rate);
-            _ListBreathingRates.Add(_mainWindow.bed_6_breathing_rate);
-            _ListBreathingRates.Add(_mainWindow.bed_7_breathing_rate);
-            _ListBreathingRates.Add(_mainWindow.bed_8_breathing_rate);
-
-            _ListBloodPressure.Add(_mainWindow.bed_1_blood_pressure);
-            _ListBloodPressure.Add(_mainWindow.bed_2_blood_pressure);
-            _ListBloodPressure.Add(_mainWindow.bed_3_blood_pressure);
-            _ListBloodPressure.Add(_mainWindow.bed_4_blood_pressure);
-            _ListBloodPressure.Add(_mainWindow.bed_5_blood_pressure);
-            _ListBloodPressure.Add(_mainWindow.bed_6_blood_pressure);
-            _ListBloodPressure.Add(_mainWindow.bed_7_blood_pressure);
-            _ListBloodPressure.Add(_mainWindow.bed_8_blood_pressure);
-        
-        }
-
 
         public void RunMonitor()
         {
@@ -122,7 +55,7 @@ namespace PatientMonitor
 
         void setupUI()
         {
-            /*_mainWindow.patientSelector.SelectionChanged
+            _mainWindow.patientSelector.SelectionChanged
                 += new System.Windows.Controls.SelectionChangedEventHandler(newPatientSelected);
 
             _mainWindow.heartRateLower.AlarmValue = (int)DefaultSettings.LOWER_PULSE_RATE;
@@ -147,7 +80,7 @@ namespace PatientMonitor
             _mainWindow.breathingRateUpper.ValueChanged += new EventHandler(limitsChanged);
             _mainWindow.temperatureUpper.ValueChanged += new EventHandler(limitsChanged);
             _mainWindow.systolicUpper.ValueChanged += new EventHandler(limitsChanged);
-            _mainWindow.diastolicUpper.ValueChanged += new EventHandler(limitsChanged);*/
+            _mainWindow.diastolicUpper.ValueChanged += new EventHandler(limitsChanged);
         }
 
         void limitsChanged(object sender, EventArgs e)
