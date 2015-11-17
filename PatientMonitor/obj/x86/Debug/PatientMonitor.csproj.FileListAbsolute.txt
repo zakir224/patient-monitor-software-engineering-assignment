@@ -127,4 +127,3 @@ E:\PMS\patient-monitoring-system\PatientMonitor\bin\Debug\PatientMonitor.exe.con
 E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\PatientMonitor_Content.g.cs
 E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\CentralStation.baml
 E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\CentralStation.g.cs
-E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\PatientMonitor.csprojResolveAssemblyReference.cache

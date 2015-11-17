@@ -22,7 +22,7 @@ namespace PatientMonitor
         {
             InitializeComponent();
             PatientFactory factory = new PatientFactory();
-            PatientMonitoringController controller = new PatientMonitoringController(this, factory);
+            Controller controller = new Controller(this, factory);
             controller.RunMonitor();
         }
 

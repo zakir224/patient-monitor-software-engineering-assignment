@@ -24,9 +24,9 @@
             <Label Content="Temparature&#xA;" HorizontalAlignment="Left" Margin="301,74,0,0" VerticalAlignment="Top" Height="26"/>
             <Label Content="Bed 3" HorizontalAlignment="Left" Margin="164,0,0,0" VerticalAlignment="Top"/>
         </Grid>
-        <Label Content="45" HorizontalAlignment="Left" Margin="138,288,0,0" VerticalAlignment="Top" Width="38"/>
-        <Label Content="45" HorizontalAlignment="Left" Margin="242,288,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
-        <Label Content="45" HorizontalAlignment="Left" Margin="347,288,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
+        <Label x:Name="bed_3_breathing_rate" Content="45" HorizontalAlignment="Left" Margin="138,288,0,0" VerticalAlignment="Top" Width="38"/>
+        <Label x:Name="bed_3_blood_pressure" Content="45" HorizontalAlignment="Left" Margin="242,288,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
+        <Label x:Name="bed_3_temparature" Content="45" HorizontalAlignment="Left" Margin="347,288,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
         <Label x:Name="bed_3_heart_rate" Content="45" HorizontalAlignment="Left" Margin="49,288,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
         <Grid Margin="455,246,77,360" Width="380">
             <Rectangle x:Name="bg_bed_4" Fill="#FFFAFAFF" HorizontalAlignment="Left" Height="123" Stroke="#FFE3E5E8" VerticalAlignment="Top" Width="380" RenderTransformOrigin="0.482,0.5"/>
@@ -36,9 +36,9 @@
             <Label Content="Temparature&#xA;" HorizontalAlignment="Left" Margin="301,74,0,0" VerticalAlignment="Top" Height="26"/>
             <Label Content="Bed 4" HorizontalAlignment="Left" Margin="172,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.395,-1.192"/>
         </Grid>
-        <Label Content="45" HorizontalAlignment="Left" Margin="569,288,0,0" VerticalAlignment="Top" Width="38"/>
-        <Label Content="45" HorizontalAlignment="Left" Margin="673,288,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
-        <Label Content="45" HorizontalAlignment="Left" Margin="780,288,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
+        <Label x:Name="bed_4_breathing_rate" Content="45" HorizontalAlignment="Left" Margin="569,288,0,0" VerticalAlignment="Top" Width="38"/>
+        <Label x:Name="bed_4_blood_pressure" Content="45" HorizontalAlignment="Left" Margin="673,288,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
+        <Label x:Name="bed_4_temparature" Content="45" HorizontalAlignment="Left" Margin="780,288,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
         <Label x:Name="bed_4_heart_rate" Content="45" HorizontalAlignment="Left" Margin="480,288,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
         <Grid Margin="455,88,77,518" Width="380">
             <Rectangle x:Name="bg_bed_2" Fill="#FFFAFAFF" HorizontalAlignment="Left" Height="123" Stroke="#FFE3E5E8" VerticalAlignment="Top" Width="380" RenderTransformOrigin="0.482,0.5"/>
@@ -47,9 +47,9 @@
             <Label Content="Breathing Rate" HorizontalAlignment="Left" Margin="89,74,0,0" VerticalAlignment="Top"/>
             <Label Content="Temparature&#xA;" HorizontalAlignment="Left" Margin="301,74,0,0" VerticalAlignment="Top" Height="26"/>
         </Grid>
-        <Label Content="45" HorizontalAlignment="Left" Margin="569,131,0,0" VerticalAlignment="Top" Width="38"/>
-        <Label Content="45" HorizontalAlignment="Left" Margin="673,131,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
-        <Label Content="45" HorizontalAlignment="Left" Margin="778,131,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
+        <Label x:Name="bed_2_breathing_rate" Content="45" HorizontalAlignment="Left" Margin="569,131,0,0" VerticalAlignment="Top" Width="38"/>
+        <Label x:Name="bed_2_blood_pressure" Content="45" HorizontalAlignment="Left" Margin="673,131,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
+        <Label x:Name="bed_2_temparature" Content="45" HorizontalAlignment="Left" Margin="778,131,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
         <Label x:Name="bed_2_heart_rate" Content="45" HorizontalAlignment="Left" Margin="480,131,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
         <Grid Margin="21,396,505,199" Width="380">
             <Rectangle x:Name="bg_bed_5" Fill="#FFFAFAFF" HorizontalAlignment="Left" Height="123" Stroke="#FFE3E5E8" VerticalAlignment="Top" Width="380" RenderTransformOrigin="0.482,0.5"/>
@@ -59,9 +59,9 @@
             <Label Content="Temparature&#xA;" HorizontalAlignment="Left" Margin="301,74,0,0" VerticalAlignment="Top" Height="26"/>
             <Label Content="Bed 5" HorizontalAlignment="Left" Margin="160,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.803,0.462"/>
         </Grid>
-        <Label Content="45" HorizontalAlignment="Left" Margin="138,443,0,0" VerticalAlignment="Top" Width="38"/>
-        <Label Content="45" HorizontalAlignment="Left" Margin="242,443,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
-        <Label Content="45" HorizontalAlignment="Left" Margin="347,443,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
+        <Label x:Name="bed_5_breathing_rate" Content="45" HorizontalAlignment="Left" Margin="138,443,0,0" VerticalAlignment="Top" Width="38"/>
+        <Label x:Name="bed_5_blood_pressure" Content="45" HorizontalAlignment="Left" Margin="242,443,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
+        <Label x:Name="bed_5_temparature" Content="45" HorizontalAlignment="Left" Margin="347,443,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
         <Label x:Name="bed_5_heart_rate" Content="45" HorizontalAlignment="Left" Margin="49,443,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
         <Grid Margin="452,396,74,199" Width="380">
             <Rectangle x:Name="bg_bed_6" Fill="#FFFAFAFF" HorizontalAlignment="Left" Height="123" Stroke="#FFE3E5E8" VerticalAlignment="Top" Width="380" RenderTransformOrigin="0.482,0.5"/>
@@ -71,9 +71,9 @@
             <Label Content="Temparature&#xA;" HorizontalAlignment="Left" Margin="301,74,0,0" VerticalAlignment="Top" Height="26"/>
             <Label Content="Bed 6" HorizontalAlignment="Left" Margin="177,0,0,0" VerticalAlignment="Top"/>
         </Grid>
-        <Label Content="45" HorizontalAlignment="Left" Margin="569,443,0,0" VerticalAlignment="Top" Width="38"/>
-        <Label Content="45" HorizontalAlignment="Left" Margin="673,443,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
-        <Label Content="45" HorizontalAlignment="Left" Margin="778,443,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
+        <Label x:Name="bed_6_breathing_rate" Content="45" HorizontalAlignment="Left" Margin="569,443,0,0" VerticalAlignment="Top" Width="38"/>
+        <Label x:Name="bed_6_blood_pressure" Content="45" HorizontalAlignment="Left" Margin="673,443,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
+        <Label x:Name="bed_6_temparature" Content="45" HorizontalAlignment="Left" Margin="778,443,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
         <Label x:Name="bed_6_heart_rate" Content="45" HorizontalAlignment="Left" Margin="480,443,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
         <Grid Margin="21,569,505,33" Width="380">
             <Rectangle x:Name="bg_bed_7" Fill="#FFFAFAFF" HorizontalAlignment="Left" Height="123" Stroke="#FFE3E5E8" VerticalAlignment="Top" Width="380" RenderTransformOrigin="0.482,0.5"/>
@@ -83,9 +83,9 @@
             <Label Content="Temparature&#xA;" HorizontalAlignment="Left" Margin="301,74,0,0" VerticalAlignment="Top" Height="26"/>
             <Label Content="Bed 7" HorizontalAlignment="Left" Margin="160,0,0,0" VerticalAlignment="Top"/>
         </Grid>
-        <Label Content="45" HorizontalAlignment="Left" Margin="138,608,0,0" VerticalAlignment="Top" Width="38"/>
-        <Label Content="45" HorizontalAlignment="Left" Margin="242,608,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
-        <Label Content="45" HorizontalAlignment="Left" Margin="347,608,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
+        <Label x:Name="bed_7_breathing_rate" Content="45" HorizontalAlignment="Left" Margin="138,608,0,0" VerticalAlignment="Top" Width="38"/>
+        <Label x:Name="bed_7_blood_pressure" Content="45" HorizontalAlignment="Left" Margin="242,608,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
+        <Label x:Name="bed_7_temparature" Content="45" HorizontalAlignment="Left" Margin="347,608,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
         <Label x:Name="bed_7_heart_rate" Content="45" HorizontalAlignment="Left" Margin="49,608,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
         <Grid Margin="452,569,74,33" Width="380">
             <Rectangle x:Name="bg_bed_8" Fill="#FFFAFAFF" HorizontalAlignment="Left" Height="123" Stroke="#FFE3E5E8" VerticalAlignment="Top" Width="380" RenderTransformOrigin="0.482,0.5"/>
@@ -95,10 +95,10 @@
             <Label Content="Temparature&#xA;" HorizontalAlignment="Left" Margin="301,74,0,0" VerticalAlignment="Top" Height="26"/>
             <Label Content="Bed 8" HorizontalAlignment="Left" Margin="178,0,0,0" VerticalAlignment="Top"/>
         </Grid>
-        <Label Content="45" HorizontalAlignment="Left" Margin="569,608,0,0" VerticalAlignment="Top" Width="38"/>
-        <Label Content="45" HorizontalAlignment="Left" Margin="673,608,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
-        <Label Content="45" HorizontalAlignment="Left" Margin="778,608,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
-        <Label Content="45" HorizontalAlignment="Left" Margin="480,608,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
+        <Label x:Name="bed_8_breathing_rate" Content="45" HorizontalAlignment="Left" Margin="569,608,0,0" VerticalAlignment="Top" Width="38"/>
+        <Label x:Name="bed_8_blood_pressure" Content="45" HorizontalAlignment="Left" Margin="673,608,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
+        <Label x:Name="bed_8_temparature" Content="45" HorizontalAlignment="Left" Margin="778,608,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
+        <Label x:Name="bed_8_heart_rate" Content="45" HorizontalAlignment="Left" Margin="480,608,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.737,0.442"/>
         <Label Content="Bed 1" HorizontalAlignment="Left" Margin="190,88,0,0" VerticalAlignment="Top"/>
         <Label Content="Bed 2" HorizontalAlignment="Left" Margin="626,88,0,0" VerticalAlignment="Top"/>
     </Grid>

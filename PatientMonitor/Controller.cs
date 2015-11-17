@@ -7,7 +7,7 @@ using System.Windows.Threading;
 
 namespace PatientMonitor
 {
-    class PatientMonitoringController
+    class Controller
     {
         readonly Window1 _mainWindow = null;
         readonly IPatientFactory _patientFactory = null;
@@ -35,7 +35,7 @@ namespace PatientMonitor
         Label _diastolicPressure;
         Label _temperature;
 
-        public PatientMonitoringController(Window1 window, IPatientFactory patientFactory)
+        public Controller(Window1 window, IPatientFactory patientFactory)
         {
             _patientFactory = patientFactory;
             _mainWindow = window;

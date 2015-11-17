@@ -23,3 +23,13 @@ C:\Development\PatientMonitor\TestPatientMonitor\obj\Debug\TestPatientMonitor.pd
 E:\PMS\patient-monitoring-system\TestPatientMonitor\obj\Debug\TestPatientMonitor.csprojResolveAssemblyReference.cache
 E:\PMS\patient-monitoring-system\TestPatientMonitor\obj\Debug\TestPatientMonitor.dll
 E:\PMS\patient-monitoring-system\TestPatientMonitor\obj\Debug\TestPatientMonitor.pdb
+E:\PMS\patient-monitoring-system\TestPatientMonitor\bin\Debug\PMSDatabase.mdf
+E:\PMS\patient-monitoring-system\TestPatientMonitor\bin\Debug\PMSDatabase_log.ldf
+E:\PMS\patient-monitoring-system\TestPatientMonitor\bin\Debug\TestPatientMonitor.dll
+E:\PMS\patient-monitoring-system\TestPatientMonitor\bin\Debug\TestPatientMonitor.pdb
+E:\PMS\patient-monitoring-system\TestPatientMonitor\bin\Debug\Moq.dll
+E:\PMS\patient-monitoring-system\TestPatientMonitor\bin\Debug\nunit.framework.dll
+E:\PMS\patient-monitoring-system\TestPatientMonitor\bin\Debug\PatientMonitor.exe
+E:\PMS\patient-monitoring-system\TestPatientMonitor\bin\Debug\PatientMonitor.pdb
+E:\PMS\patient-monitoring-system\TestPatientMonitor\bin\Debug\Moq.xml
+E:\PMS\patient-monitoring-system\TestPatientMonitor\bin\Debug\nunit.framework.xml

@@ -104,6 +104,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controller.cs" />
     <Compile Include="IPatientData.cs" />
     <Compile Include="IPatientFactory.cs" />
     <Compile Include="PatientClassesEnumeration.cs" />
