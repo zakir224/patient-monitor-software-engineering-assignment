@@ -27,8 +27,8 @@ namespace PatientMonitor
         {
             InitializeComponent();
             PatientFactory factory = new PatientFactory();
-            PatientMonitoringController controller = new PatientMonitoringController(this, factory);
-            controller.RunMonitor();
+            //PatientMonitoringController controller = new PatientMonitoringController(this, factory);
+            //controller.RunMonitor();
         }
 
         public void soundMutableAlarm()

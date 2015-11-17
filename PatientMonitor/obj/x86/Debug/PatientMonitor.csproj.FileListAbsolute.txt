@@ -86,3 +86,45 @@ C:\Users\Md Zakir Hossen\Desktop\PatientMonitor\PatientMonitor\obj\x86\Debug\Mai
 C:\Users\Md Zakir Hossen\Desktop\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor.g.resources
 C:\Users\Md Zakir Hossen\Desktop\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor.Properties.Resources.resources
 C:\Users\Md Zakir Hossen\Desktop\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor.csproj.GenerateResource.Cache
+E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\PatientMonitor.exe
+E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\PatientMonitor.pdb
+E:\PMS\patient-monitoring-system\PatientMonitor\bin\Debug\PatientMonitor.exe
+E:\PMS\patient-monitoring-system\PatientMonitor\bin\Debug\PatientMonitor.pdb
+E:\PMS\patient-monitoring-system\PatientMonitor\bin\Debug\nunit.framework.dll
+E:\PMS\patient-monitoring-system\PatientMonitor\bin\Debug\TAlex.WPF.Controls.dll
+E:\PMS\patient-monitoring-system\PatientMonitor\bin\Debug\Xceed.Wpf.AvalonDock.dll
+E:\PMS\patient-monitoring-system\PatientMonitor\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+E:\PMS\patient-monitoring-system\PatientMonitor\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+E:\PMS\patient-monitoring-system\PatientMonitor\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+E:\PMS\patient-monitoring-system\PatientMonitor\bin\Debug\Xceed.Wpf.DataGrid.dll
+E:\PMS\patient-monitoring-system\PatientMonitor\bin\Debug\Xceed.Wpf.Toolkit.dll
+E:\PMS\patient-monitoring-system\PatientMonitor\bin\Debug\nunit.framework.xml
+E:\PMS\patient-monitoring-system\PatientMonitor\bin\Debug\TAlex.WPF.Controls.xml
+E:\PMS\patient-monitoring-system\PatientMonitor\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+E:\PMS\patient-monitoring-system\PatientMonitor\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+E:\PMS\patient-monitoring-system\PatientMonitor\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+E:\PMS\patient-monitoring-system\PatientMonitor\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+E:\PMS\patient-monitoring-system\PatientMonitor\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+E:\PMS\patient-monitoring-system\PatientMonitor\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+E:\PMS\patient-monitoring-system\PatientMonitor\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+E:\PMS\patient-monitoring-system\PatientMonitor\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+E:\PMS\patient-monitoring-system\PatientMonitor\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+E:\PMS\patient-monitoring-system\PatientMonitor\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\UpDown.baml
+E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\MainWindow.g.cs
+E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\UpDown.g.cs
+E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\App.g.cs
+E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\PatientMonitor_MarkupCompile.cache
+E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\PatientMonitor_MarkupCompile.lref
+E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\MainWindow.baml
+E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\PatientMonitor.g.resources
+E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\PatientMonitor.Properties.Resources.resources
+E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\PatientMonitor.csproj.GenerateResource.Cache
+E:\PMS\patient-monitoring-system\PatientMonitor\bin\Debug\PMSDatabase.mdf
+E:\PMS\patient-monitoring-system\PatientMonitor\bin\Debug\PMSDatabase_log.ldf
+E:\PMS\patient-monitoring-system\PatientMonitor\bin\Debug\PatientMonitor.exe.config
+E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\PatientMonitor_Content.g.cs
+E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\CentralStation.baml
+E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\CentralStation.g.cs
+E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\PatientMonitor.csprojResolveAssemblyReference.cache

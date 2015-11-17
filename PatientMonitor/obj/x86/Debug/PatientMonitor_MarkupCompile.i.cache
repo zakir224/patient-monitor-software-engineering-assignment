@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Md Zakir Hossen\Desktop\PatientMonitor\PatientMonitor\obj\x86\Debug\
+E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\
 PatientMonitor
 none
 false
 DEBUG;TRACE
-C:\Users\Md Zakir Hossen\Desktop\PatientMonitor\PatientMonitor\App.xaml
-2-524991215
-
-17-872628728
-20-1836524711
-MainWindow.xaml;UpDown.xaml;
+E:\PMS\patient-monitoring-system\PatientMonitor\App.xaml
+3-602162612
+21322639496
+19280199076
+22207537247
+MainWindow.xaml;UpDown.xaml;CentralStation.xaml;
 
 False
 

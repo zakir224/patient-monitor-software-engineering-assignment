@@ -9,30 +9,38 @@ namespace PatientMonitor
 {
     class PatientMonitoringController
     {
-        readonly MainWindow _mainWindow = null;
+        readonly Window1 _mainWindow = null;
         readonly IPatientFactory _patientFactory = null;
         DispatcherTimer _tickTimer = new DispatcherTimer();
         PatientDataReader _dataReader;
+        PatientDataReader _dataReader1;
         PatientData _patientData;
+        PatientData _patientData1;
         PatientAlarmer _alarmer;
 
         CheckBox _alarmMuter;
         Label _pulseRate;
+        Label _pulseRate1;
         Label _breathingRate;
         Label _systolicPressure;
         Label _diastolicPressure;
         Label _temperature;
 
-        public PatientMonitoringController(MainWindow window, IPatientFactory patientFactory)
+        public PatientMonitoringController(Window1 window, IPatientFactory patientFactory)
         {
             _patientFactory = patientFactory;
             _mainWindow = window;
-            _pulseRate = _mainWindow.pulseRate;
+            _pulseRate = _mainWindow.bed_1_heart_rate;
+            _pulseRate1 = _mainWindow.bed_2_heart_rate;
+            _breathingRate = _mainWindow.bed_1_breathing_rate;
+            _systolicPressure = _mainWindow.bed_1_blood_pressure;
+            _temperature = _mainWindow.bed_1_temparature;
+          /*  _pulseRate = _mainWindow.pulseRate;
             _breathingRate = _mainWindow.breathingRate;
             _systolicPressure = _mainWindow.systolic;
             _diastolicPressure = _mainWindow.diastolic;
             _temperature = _mainWindow.temperature;
-            _alarmMuter = _mainWindow.AlarmMute;
+            _alarmMuter = _mainWindow.AlarmMute;*/
         }
 
         public void RunMonitor()
@@ -43,7 +51,7 @@ namespace PatientMonitor
 
         void setupUI()
         {
-            _mainWindow.patientSelector.SelectionChanged
+            /*_mainWindow.patientSelector.SelectionChanged
                 += new System.Windows.Controls.SelectionChangedEventHandler(newPatientSelected);
 
             _mainWindow.heartRateLower.AlarmValue = (int)DefaultSettings.LOWER_PULSE_RATE;
@@ -68,12 +76,12 @@ namespace PatientMonitor
             _mainWindow.breathingRateUpper.ValueChanged += new EventHandler(limitsChanged);
             _mainWindow.temperatureUpper.ValueChanged += new EventHandler(limitsChanged);
             _mainWindow.systolicUpper.ValueChanged += new EventHandler(limitsChanged);
-            _mainWindow.diastolicUpper.ValueChanged += new EventHandler(limitsChanged);
+            _mainWindow.diastolicUpper.ValueChanged += new EventHandler(limitsChanged);*/
         }
 
         void limitsChanged(object sender, EventArgs e)
         {
-            _alarmer.PulseRateTester.LowerLimit = _mainWindow.heartRateLower.AlarmValue;
+           /* _alarmer.PulseRateTester.LowerLimit = _mainWindow.heartRateLower.AlarmValue;
             _alarmer.BreathingRateTester.LowerLimit = _mainWindow.breathingRateLower.AlarmValue;
             _alarmer.TemperatureTester.LowerLimit = _mainWindow.temperatureLower.AlarmValue;
             _alarmer.SystolicBpTester.LowerLimit = _mainWindow.systolicLower.AlarmValue;
@@ -83,40 +91,53 @@ namespace PatientMonitor
             _alarmer.BreathingRateTester.UpperLimit = _mainWindow.breathingRateUpper.AlarmValue;
             _alarmer.TemperatureTester.UpperLimit = _mainWindow.temperatureUpper.AlarmValue;
             _alarmer.SystolicBpTester.UpperLimit = _mainWindow.systolicUpper.AlarmValue;
-            _alarmer.DiastolicBpTester.UpperLimit = _mainWindow.diastolicUpper.AlarmValue;
+            _alarmer.DiastolicBpTester.UpperLimit = _mainWindow.diastolicUpper.AlarmValue;*/
         }
 
         void setupComponents()
         {
             _patientData = (PatientData)_patientFactory.CreateandReturnObj(PatientClassesEnumeration.PatientData);
+            _patientData1 = (PatientData)_patientFactory.CreateandReturnObj(PatientClassesEnumeration.PatientData);
             _dataReader = (PatientDataReader)_patientFactory.CreateandReturnObj(PatientClassesEnumeration.PatientDataReader);
+            _dataReader1 = (PatientDataReader)_patientFactory.CreateandReturnObj(PatientClassesEnumeration.PatientDataReader);
             _alarmer = (PatientAlarmer)_patientFactory.CreateandReturnObj(PatientClassesEnumeration.PatientAlarmer);
             _alarmer.BreathingRateAlarm += new EventHandler(soundMutableAlarm);
             _alarmer.DiastolicBloodPressureAlarm += new EventHandler(soundMutableAlarm);
             _alarmer.PulseRateAlarm += new EventHandler(soundMutableAlarm);
             _alarmer.SystolicBloodPressureAlarm += new EventHandler(soundMutableAlarm);
             _alarmer.TemperatureAlarm += new EventHandler(soundMutableAlarm);
+
+            string fileName = @"..\..\..\" + "Bed 1" + ".csv";
+            _dataReader.Connect(fileName);
+
+            string fileName2 = @"..\..\..\" + "Bed 2" + ".csv";
+            _dataReader1.Connect(fileName2);
+
             _tickTimer.Stop();
             _tickTimer.Interval= TimeSpan.FromMilliseconds(1000);
             _tickTimer.Tick += new EventHandler(updateReadings);
+            _tickTimer.Start();
         }
 
         void updateReadings(object sender, EventArgs e)
-        {            
+        {
+
             _patientData.SetPatientData(_dataReader.getData());
+            _patientData1.SetPatientData(_dataReader1.getData());
             _pulseRate.Content = _patientData.PulseRate;
+            _pulseRate1.Content = _patientData1.PulseRate;
             _breathingRate.Content = _patientData.BreathingRate;
             _systolicPressure.Content = _patientData.SystolicBloodPressure;
-            _diastolicPressure.Content = _patientData.DiastolicBloodPressure;
+            //_diastolicPressure.Content = _patientData.DiastolicBloodPressure;
             _temperature.Content = _patientData.Temperature;
-            _alarmer.ReadingsTest(_patientData);
+            //_alarmer.ReadingsTest(_patientData);
         }
 
         void newPatientSelected(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
             _tickTimer.Stop();
-            string fileName = @"..\..\..\" + _mainWindow.patientSelector.SelectedValue + ".csv";
-            _dataReader.Connect(fileName);
+           // string fileName = @"..\..\..\" + _mainWindow.patientSelector.SelectedValue + ".csv";
+           // _dataReader.Connect(fileName);
             _tickTimer.Start();
         }
 
@@ -124,7 +145,7 @@ namespace PatientMonitor
         {
             if(_alarmMuter.IsChecked == false)
             {
-                _mainWindow.soundMutableAlarm();
+                //_mainWindow.soundMutableAlarm();
             }
         }
     }
