@@ -82,6 +82,8 @@ namespace PatientMonitor
 
         }
 
+
+
         // insert a row in the table SessionRecord
         public string InsertNewSession(SessionRecord session, string sqlStatement)
         {
