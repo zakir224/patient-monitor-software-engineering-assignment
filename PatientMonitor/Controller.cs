@@ -18,7 +18,11 @@ namespace PatientMonitor
         List<Label> _ListBreathingRates;
         List<Label> _ListBloodPressure;
         List<Label> _ListTemperatures;
-
+        List<Canvas> _ListModuleBloodCanvas;
+        List<Canvas> _ListModuleHeartCanvas;
+        List<Canvas> _ListModuleTemparatureCanvas;
+        List<Canvas> _ListModulePulseCanvas;
+        ModuleSetting moduleSetting;
         PatientAlarmer _alarmer;
 
         CheckBox _alarmMuter;
@@ -27,8 +31,11 @@ namespace PatientMonitor
         {
             _patientFactory = patientFactory;
             _mainWindow = window;
+            moduleSetting = ModuleSetting.Instance;
+            initModuleSettings();
             DataInit();
             GrabUiControlReferences();
+            updateView();
         }
 
         public void DataInit()
@@ -39,6 +46,10 @@ namespace PatientMonitor
             _ListBloodPressure = new List<Label>();
             _ListTemperatures = new List<Label>();
             _ListBreathingRates = new List<Label>();
+            _ListModuleBloodCanvas = new List<Canvas>();
+            _ListModuleHeartCanvas = new List<Canvas>();
+            _ListModulePulseCanvas = new List<Canvas>();
+            _ListModuleTemparatureCanvas = new List<Canvas>();
             for (int i = 0; i < 8; i++)
             {
                 fileName = @"..\..\..\" + "Bed "+(i+1) + ".csv";
@@ -47,6 +58,11 @@ namespace PatientMonitor
                 _listPatientDataReader.Add(_dataReader);
             }
 
+
+        }
+
+        private void initModuleSettings()
+        {
 
         }
 
@@ -87,9 +103,46 @@ namespace PatientMonitor
             _ListBloodPressure.Add(_mainWindow.bed_6_blood_pressure);
             _ListBloodPressure.Add(_mainWindow.bed_7_blood_pressure);
             _ListBloodPressure.Add(_mainWindow.bed_8_blood_pressure);
-        
-        }
 
+            _ListModuleBloodCanvas.Add(_mainWindow.module_blood_bed_1);
+            _ListModuleBloodCanvas.Add(_mainWindow.module_blood_bed_2);
+            _ListModuleBloodCanvas.Add(_mainWindow.module_blood_bed_3);
+            _ListModuleBloodCanvas.Add(_mainWindow.module_blood_bed_4);
+            _ListModuleBloodCanvas.Add(_mainWindow.module_blood_bed_5);
+            _ListModuleBloodCanvas.Add(_mainWindow.module_blood_bed_6);
+            _ListModuleBloodCanvas.Add(_mainWindow.module_blood_bed_7);
+            _ListModuleBloodCanvas.Add(_mainWindow.module_blood_bed_8);
+
+
+            _ListModulePulseCanvas.Add(_mainWindow.module_breathing_bed_1);
+            _ListModulePulseCanvas.Add(_mainWindow.module_breathing_bed_2);
+            _ListModulePulseCanvas.Add(_mainWindow.module_breathing_bed_3);
+            _ListModulePulseCanvas.Add(_mainWindow.module_breathing_bed_4);
+            _ListModulePulseCanvas.Add(_mainWindow.module_breathing_bed_5);
+            _ListModulePulseCanvas.Add(_mainWindow.module_breathing_bed_6);
+            _ListModulePulseCanvas.Add(_mainWindow.module_breathing_bed_7);
+            _ListModulePulseCanvas.Add(_mainWindow.module_breathing_bed_8);
+
+
+            _ListModuleHeartCanvas.Add(_mainWindow.module_heart_bed_1);
+            _ListModuleHeartCanvas.Add(_mainWindow.module_heart_bed_2);
+            _ListModuleHeartCanvas.Add(_mainWindow.module_heart_bed_3);
+            _ListModuleHeartCanvas.Add(_mainWindow.module_heart_bed_4);
+            _ListModuleHeartCanvas.Add(_mainWindow.module_heart_bed_5);
+            _ListModuleHeartCanvas.Add(_mainWindow.module_heart_bed_6);
+            _ListModuleHeartCanvas.Add(_mainWindow.module_heart_bed_7);
+            _ListModuleHeartCanvas.Add(_mainWindow.module_heart_bed_8);
+
+
+            _ListModuleTemparatureCanvas.Add(_mainWindow.module_temparature_bed_1);
+            _ListModuleTemparatureCanvas.Add(_mainWindow.module_temparature_bed_2);
+            _ListModuleTemparatureCanvas.Add(_mainWindow.module_temparature_bed_3);
+            _ListModuleTemparatureCanvas.Add(_mainWindow.module_temparature_bed_4);
+            _ListModuleTemparatureCanvas.Add(_mainWindow.module_temparature_bed_5);
+            _ListModuleTemparatureCanvas.Add(_mainWindow.module_temparature_bed_6);
+            _ListModuleTemparatureCanvas.Add(_mainWindow.module_temparature_bed_7);
+            _ListModuleTemparatureCanvas.Add(_mainWindow.module_temparature_bed_8);
+        }
 
         public void RunMonitor()
         {
@@ -136,6 +189,21 @@ namespace PatientMonitor
                 _ListBreathingRates[i].Content = _patientData.BreathingRate;
                 _ListBloodPressure[i].Content = _patientData.SystolicBloodPressure;
                 _ListTemperatures[i].Content = _patientData.Temperature;
+            }
+        }
+
+        public void updateView()
+        {
+            for (int i = 0; i < 8; i++)
+            {
+                _ListModuleBloodCanvas[i].Visibility = moduleSetting.getBedSetting(i).BloodPressureEnabled ?
+                                                        System.Windows.Visibility.Visible : System.Windows.Visibility.Hidden;
+                _ListModuleHeartCanvas[i].Visibility = moduleSetting.getBedSetting(i).HeartRateEnabled ?
+                                                        System.Windows.Visibility.Visible : System.Windows.Visibility.Hidden;
+                _ListModuleTemparatureCanvas[i].Visibility = moduleSetting.getBedSetting(i).TemparatureEnabled ?
+                                                        System.Windows.Visibility.Visible : System.Windows.Visibility.Hidden;
+                _ListModulePulseCanvas[i].Visibility = moduleSetting.getBedSetting(i).PulseRateEnabled ?
+                                                        System.Windows.Visibility.Visible : System.Windows.Visibility.Hidden;
             }
         }
 

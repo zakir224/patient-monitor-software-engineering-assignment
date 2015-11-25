@@ -128,3 +128,4 @@ E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\PatientMonitor_Con
 E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\CentralStation.baml
 E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\CentralStation.g.cs
 E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\PatientMonitor.csprojResolveAssemblyReference.cache
+E:\PMS\patient-monitoring-system\PatientMonitor\obj\x86\Debug\PatientMonitor.ModulePreferencePopUp.resources
